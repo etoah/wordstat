@@ -2,14 +2,10 @@ var scraper = require('website-scraper');
 scraper.scrape({
   urls: [
     'https://www.smashingmagazine.com/', // Will be saved with default filename 'index.html'
-    {
-      url: 'http://nodejs.org/about',
-      filename: 'about.html'
-    }, {
-      url: 'http://blog.nodejs.org/',
-      filename: 'blog.html'
-    }
-  ],
+  ], 
+  urlFilter: function(url){
+    return url.indexOf('https://www.smashingmagazine.com') === 0;
+  },
   directory: '/smashing/',
   subdirectories: [{
     directory: 'img',
