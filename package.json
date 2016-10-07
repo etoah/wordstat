@@ -1,0 +1,22 @@
+{
+  "name": "wordscraper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etoah"
+  },
+  "keywords": [
+    "word",
+    "scraper"
+  ],
+  "author": "Lucien (etoah)",
+  "license": "MIT",
+  "dependencies": {
+    "website-scraper": "^1.2.0"
+  }
+}
